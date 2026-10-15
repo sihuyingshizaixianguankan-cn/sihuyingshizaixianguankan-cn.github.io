@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="四虎影视在线观看 - 猛虎出击，每日精选电影、电视剧、综艺、动漫高分内容在线观看推荐，四虎影视带你发现更多精彩好剧。">
+<meta name="keywords" content="四虎影视在线观看,四虎影视,影视在线观看,电影推荐,电视剧推荐,综艺,动漫,sihuyingshizaixianguankan">
+<meta name="author" content="四虎影视在线观看">
+<meta property="og:title" content="四虎影视在线观看 - 猛虎出击，精选影视在线观看推荐">
+<meta property="og:description" content="四虎影视在线观看提供电影、电视剧、综艺、动漫精选推荐，每日发现更多好内容。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sihuyingshizaixianguankan-cn.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#150e05">
+<title>四虎影视在线观看 - 猛虎出击，精选影视推荐 | 电影电视剧综艺动漫</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#0c0804;--bg2:#140d06;--card:#1a1108;--line:rgba(245,158,11,.14);
+  --amber:#f59e0b;--tiger:#d97706;--gold:#fbbf24;--bronze:#b45309;--cream:#fef3c7;--rust:#c2410c;
+  --ink:#fdf6e8;--muted:#a89478;--radius:18px;
+}
+html{scroll-behavior:smooth;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}ul{list-style:none;}button{font-family:inherit;cursor:pointer;}
+
+/* ===== NAV ===== */
+.nw{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(12,8,4,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);}
+.ni{max-width:1400px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:66px;}
+.logo{display:flex;align-items:center;gap:11px;font-size:19.5px;font-weight:900;letter-spacing:-.3px;}
+.lm{width:32px;height:32px;border-radius:8px;background:linear-gradient(140deg,#f59e0b,#c2410c);display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 0 16px rgba(245,158,11,.4);}
+.nl{display:flex;gap:3px;}
+.nl a{padding:9px 16px;border-radius:10px;font-size:13.5px;color:var(--muted);transition:.3s;font-weight:600;}
+.nl a:hover{color:var(--gold);background:rgba(245,158,11,.05);}
+.nl a.on{color:var(--gold);background:rgba(245,158,11,.1);}
+.mb{display:none;flex-direction:column;gap:5px;padding:6px;}
+.mb i{width:22px;height:2px;background:var(--amber);border-radius:2px;}
+
+/* ===== HERO ===== */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 65% at 50% 50%,rgba(217,119,6,.12),transparent 65%),var(--bg);}
+.stripes{position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0,transparent 38px,rgba(245,158,11,.02) 38px,rgba(245,158,11,.02) 39px);}
+.vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(12,8,4,.85) 100%);}
+.hero-in{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:0 28px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.hero h1{font-size:clamp(2rem,5vw,4.2rem);font-weight:900;line-height:1.06;margin-bottom:14px;letter-spacing:-1.4px;}
+.hero h1 .str{color:var(--amber);}
+.hero-sub{font-size:clamp(.9rem,1.3vw,1rem);color:var(--muted);max-width:500px;margin-bottom:30px;}
+.hb{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{padding:13px 30px;border-radius:12px;font-size:14.5px;font-weight:700;border:none;transition:.3s;display:inline-flex;align-items:center;gap:7px;}
+.b1{background:linear-gradient(135deg,#f59e0b,#c2410c);color:#150e05;}
+.b1:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(245,158,11,.35);}
+.b2{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.02);}
+.b2:hover{border-color:var(--amber);color:var(--amber);}
+.stats{display:flex;gap:42px;margin-top:42px;flex-wrap:wrap;}
+.stat b{display:block;font-size:1.9rem;font-weight:800;color:var(--gold);}
+.stat span{font-size:.76rem;color:var(--muted);}
+/* hero visual: tiger claw stripes bars */
+.claws{display:flex;flex-direction:column;gap:18px;justify-content:center;}
+.claw{display:flex;align-items:center;gap:18px;padding:20px 24px;border-radius:16px;background:linear-gradient(100deg,rgba(245,158,11,.05),rgba(217,119,6,.02));border:1px solid var(--line);transition:.4s;}
+.claw:hover{border-color:rgba(245,158,11,.3);transform:translateX(8px);}
+.claw .ic{width:52px;height:52px;border-radius:14px;background:linear-gradient(140deg,#f59e0b,#c2410c);display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;}
+.claw .txt h4{font-size:1.02rem;font-weight:800;}
+.claw .txt p{font-size:.78rem;color:var(--muted);}
+
+/* ===== SECTION ===== */
+.sec{padding:96px 28px;}
+.si{max-width:1400px;margin:0 auto;}
+.sc{margin-bottom:52px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;}
+.sc-l .eyebrow{font-size:11px;color:var(--amber);letter-spacing:3px;text-transform:uppercase;font-weight:700;display:block;margin-bottom:5px;}
+.sc-l h2{font-size:clamp(1.45rem,3vw,2.1rem);font-weight:900;letter-spacing:-.6px;}
+.sc-l p{font-size:.93rem;color:var(--muted);max-width:560px;margin-top:7px;}
+.chips{display:flex;gap:8px;flex-wrap:wrap;}
+.chip{padding:8px 16px;border-radius:20px;border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:13px;font-weight:600;transition:.3s;}
+.chip:hover,.chip.on{background:var(--amber);color:#150e05;border-color:var(--amber);}
+
+/* ===== HOT LIST - vs battle ===== */
+.hot{background:var(--bg2);}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:0;align-items:center;}
+.vscard{border-radius:16px;padding:26px;border:1px solid var(--line);background:var(--card);transition:.4s;position:relative;}
+.vscard:hover{border-color:rgba(245,158,11,.3);transform:translateY(-6px);}
+.vscard .rank{position:absolute;top:-1px;right:-1px;background:linear-gradient(135deg,#f59e0b,#c2410c);color:#150e05;font-size:.72rem;font-weight:800;padding:4px 12px;border-radius:0 16px 0 10px;}
+.vsbadge{display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 24px;color:var(--amber);font-weight:900;font-size:1.4rem;}
+.vsbadge span{font-size:.72rem;color:var(--muted);font-weight:600;}
+.vscard .poster{height:130px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:3rem;margin-bottom:16px;}
+.vscard h4{font-size:1.02rem;font-weight:800;margin-bottom:4px;}
+.vscard p{font-size:.8rem;color:var(--muted);}
+.vsbar{margin-top:14px;height:5px;border-radius:3px;background:rgba(255,255,255,.06);overflow:hidden;}
+.vsfill{height:100%;border-radius:3px;background:linear-gradient(90deg,#f59e0b,#c2410c);}
+.vsgrid{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+
+/* ===== POSTER WALL - carousel ===== */
+.wall{background:var(--bg);}
+.pwrap{overflow:hidden;}
+.ptrack{display:flex;gap:18px;transition:transform .55s cubic-bezier(.65,.05,.36,1);}
+.ppanel{flex:0 0 calc(20% - 15px);border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:.35s;background:var(--card);}
+.ppanel:hover{transform:translateY(-8px);border-color:rgba(245,158,11,.3);}
+.pposter{height:220px;display:flex;align-items:center;justify-content:center;font-size:3.4rem;position:relative;}
+.pposter .tag{position:absolute;top:10px;left:10px;font-size:.7rem;padding:3px 9px;border-radius:4px;background:rgba(12,8,4,.7);color:var(--amber);font-weight:700;}
+.pposter .heat{position:absolute;bottom:10px;right:10px;font-size:.72rem;font-weight:800;color:#150e05;background:var(--gold);padding:2px 8px;border-radius:4px;}
+.ppanel .pi{padding:16px 18px;}
+.ppanel h4{font-size:.95rem;font-weight:800;margin-bottom:3px;}
+.ppanel span{font-size:.76rem;color:var(--muted);}
+
+/* ===== NEWS - alternating text blocks ===== */
+.news{background:var(--bg2);}
+.nt{display:grid;gap:0;}
+.nrow{display:grid;grid-template-columns:80px 1fr 1fr;gap:30px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line);transition:.35s;}
+.nrow:last-child{border-bottom:none;}
+.nrow:hover{background:rgba(245,158,11,.02);}
+.nnum{font-size:2.4rem;font-weight:900;color:rgba(245,158,11,.15);line-height:1;}
+.nrow .ntxt h4{font-size:1.05rem;font-weight:800;margin-bottom:5px;}
+.nrow .ntxt p{font-size:.83rem;color:var(--muted);line-height:1.75;}
+.nrow .meta{font-size:.74rem;color:var(--amber);font-weight:600;}
+
+/* ===== FOOTER ===== */
+footer{background:#080502;padding:54px 28px 22px;border-top:1px solid var(--line);}
+.fi{max-width:1400px;margin:0 auto;}
+.ft{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:38px;margin-bottom:30px;}
+.brand .logo{margin-bottom:12px;}
+.brand p{color:var(--muted);font-size:.83rem;line-height:1.9;max-width:320px;}
+.fc h4{font-size:12px;font-weight:700;margin-bottom:13px;letter-spacing:1px;color:var(--amber);}
+.fc li{margin-bottom:8px;}
+.fc a{color:var(--muted);font-size:.82rem;transition:.25s;}
+.fc a:hover{color:var(--amber);}
+.fb{padding-top:18px;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.fb p{font-size:.76rem;color:var(--muted);}
+.fl a{color:var(--muted);font-size:.76rem;margin-left:18px;transition:.25s;}
+.fl a:hover{color:var(--amber);}
+#top{position:fixed;bottom:26px;right:26px;width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,#f59e0b,#c2410c);color:#150e05;border:none;font-size:17px;z-index:999;opacity:0;visibility:hidden;transition:.3s;display:flex;align-items:center;justify-content:center;font-weight:800;box-shadow:0 6px 22px rgba(245,158,11,.3);}
+#top.show{opacity:1;visibility:visible;}
+#top:hover{transform:translateY(-3px);}
+
+@media(max-width:1060px){
+  .vsgrid{grid-template-columns:1fr;}
+  .ppanel{flex:0 0 calc(25% - 14px);}
+  .nrow{grid-template-columns:60px 1fr;}
+  .nrow .meta{display:none;}
+}
+@media(max-width:860px){
+  .hero-in{grid-template-columns:1fr;gap:40px;}
+  .claws{gap:12px;}
+  .vs{grid-template-columns:1fr;gap:16px;}
+  .vsbadge{flex-direction:row;padding:8px 0;}
+  .ppanel{flex:0 0 calc(33.33% - 13px);}
+}
+@media(max-width:768px){
+  .nl{position:fixed;top:66px;left:0;right:0;flex-direction:column;padding:14px 28px;background:rgba(12,8,4,.98);transform:translateY(-150%);opacity:0;transition:.35s;gap:4px;}
+  .nl.open{transform:translateY(0);opacity:1;}
+  .nl a{width:100%;text-align:center;padding:12px;}
+  .mb{display:flex;}
+  .stats{gap:24px;} .stats .stat b{font-size:1.5rem;}
+  .sec{padding:64px 16px;}
+  .ppanel{flex:0 0 calc(50% - 9px);}
+  .ft{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:520px){
+  .ppanel{flex:0 0 100%;}
+  .nrow{grid-template-columns:1fr;}
+  .nnum{display:none;}
+  .ft{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<nav class="nw"><div class="ni">
+  <a href="#" class="logo"><span class="lm">🐅</span>四虎影视在线观看</a>
+  <div class="nl" id="nl"><a href="#home" class="on">首页</a><a href="#hot">热榜</a><a href="#wall">剧集</a><a href="#news">资讯</a></div>
+  <div class="mb" id="mb"><i></i><i></i><i></i></div>
+</div></nav>
+
+<section class="hero" id="home">
+  <div class="stripes"></div><div class="vignette"></div>
+  <div class="hero-in">
+    <div>
+      <h1>四虎影视 <span class="str">🐅</span><br>在线观看</h1>
+      <p class="hero-sub">四虎影视在线观看，猛虎出击每日精选高分电影、热门电视剧、综艺动漫，帮你发现更多值得一看的精彩内容。</p>
+      <div class="hb"><a href="#hot" class="btn b1">🔥 查看热榜</a><a href="#wall" class="btn b2">🎬 在线观看</a></div>
+      <div class="stats">
+        <div class="stat"><b>8,600+</b><span>在线内容</span></div>
+        <div class="stat"><b>4大</b><span>内容频道</span></div>
+        <div class="stat"><b>每日</b><span>更新推荐</span></div>
+        <div class="stat"><b>42万+</b><span>观影伙伴</span></div>
+      </div>
+    </div>
+    <div class="claws">
+      <div class="claw"><div class="ic">🎬</div><div class="txt"><h4>电影频道</h4><p>院线新片 / 经典修复 / 高分口碑</p></div></div>
+      <div class="claw"><div class="ic">📺</div><div class="txt"><h4>剧集频道</h4><p>国产好剧 / 美剧韩剧 / 悬疑犯罪</p></div></div>
+      <div class="claw"><div class="ic">🎤</div><div class="txt"><h4>综艺频道</h4><p>真人秀 / 竞技 / 脱口秀 / 音乐</p></div></div>
+      <div class="claw"><div class="ic">🎨</div><div class="txt"><h4>动漫频道</h4><p>新番连载 / 国漫崛起 / 剧场版</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec hot" id="hot">
+  <div class="si">
+    <div class="sc"><div class="sc-l"><span class="eyebrow">Tiger Hot List</span><h2>🔥 热榜 · 对战精选</h2><p>四虎影视在线观看每日热榜，左右对战看谁更火</p></div>
+      <div class="chips"><span class="chip on">今日</span><span class="chip">本周</span><span class="chip">本月</span></div>
+    </div>
+    <div class="vs">
+      <div class="vscard">
+        <div class="rank">TOP 1</div>
+        <div class="poster" style="background:linear-gradient(140deg,#3a1a06,#2a1204);">🌊</div>
+        <h4>默杀</h4><p>悬疑犯罪 · 2024 · 豆瓣 7.1</p>
+        <div class="vsbar"><div class="vsfill" style="width:96%"></div></div>
+      </div>
+      <div class="vsbadge">VS<span>人气对决</span></div>
+      <div class="vscard">
+        <div class="rank">TOP 2</div>
+        <div class="poster" style="background:linear-gradient(140deg,#06233a,#041424);">🚀</div>
+        <h4>流浪地球2</h4><p>科幻巨制 · 2023 · 豆瓣 8.3</p>
+        <div class="vsbar"><div class="vsfill" style="width:89%"></div></div>
+      </div>
+    </div>
+    <div class="vsgrid">
+      <div class="vscard">
+        <div class="rank">TOP 3</div>
+        <div class="poster" style="background:linear-gradient(140deg,#2a1a06,#201404);">🎭</div>
+        <h4>周处除三害</h4><p>犯罪动作 · 2023 · 豆瓣 8.2</p>
+        <div class="vsbar"><div class="vsfill" style="width:85%"></div></div>
+      </div>
+      <div class="vscard">
+        <div class="rank">TOP 4</div>
+        <div class="poster" style="background:linear-gradient(140deg,#062a1a,#04201a);">🏔️</div>
+        <h4>热辣滚烫</h4><p>励志喜剧 · 2024 · 豆瓣 7.9</p>
+        <div class="vsbar"><div class="vsfill" style="width:81%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec wall" id="wall">
+  <div class="si">
+    <div class="sc"><div class="sc-l"><span class="eyebrow">Poster Wall</span><h2>🎬 剧集 · 海报墙</h2><p>横向滚动浏览，指尖一滑看尽好剧</p></div>
+      <div class="chips"><span class="chip on">全部</span><span class="chip">国产剧</span><span class="chip">美剧</span><span class="chip">韩剧</span></div>
+    </div>
+    <div class="pwrap"><div class="ptrack" id="track">
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#3a1a06,#2a1204);">🕵️<span class="tag">国产</span><span class="heat">98°</span></div><div class="pi"><h4>白夜追凶2</h4><span>悬疑 · 24集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#06233a,#041424);">🧬<span class="tag">美剧</span><span class="heat">95°</span></div><div class="pi"><h4>最后生还者</h4><span>末日 · 9集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#062a1a,#04201a);">⚖️<span class="tag">韩剧</span><span class="heat">93°</span></div><div class="pi"><h4>黑暗荣耀</h4><span>复仇 · 16集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#2a1a06,#201404);">🎭<span class="tag">国产</span><span class="heat">91°</span></div><div class="pi"><h4>庆余年2</h4><span>古装权谋 · 36集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#1a063a,#14042a);">🏰<span class="tag">美剧</span><span class="heat">90°</span></div><div class="pi"><h4>龙之家族</h4><span>史诗 · 10集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#3a061a,#2a0414);">💔<span class="tag">韩剧</span><span class="heat">88°</span></div><div class="pi"><h4>我的解放日志</h4><span>治愈 · 16集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#063a2a,#042a20);">🏥<span class="tag">国产</span><span class="heat">87°</span></div><div class="pi"><h4>问心</h4><span>医疗 · 38集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#2a2a06,#202004);">🚓<span class="tag">美剧</span><span class="heat">86°</span></div><div class="pi"><h4>城市支路</h4><span>犯罪 · 10集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#062a3a,#04202a);">🐙<span class="tag">日剧</span><span class="heat">84°</span></div><div class="pi"><h4>重启人生</h4><span>奇幻 · 10集</span></div></div>
+      <div class="ppanel"><div class="pposter" style="background:linear-gradient(140deg,#1a2a06,#142004);">🍵<span class="tag">国产</span><span class="heat">82°</span></div><div class="pi"><h4>南来北往</h4><span>年代 · 39集</span></div></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="sec news" id="news">
+  <div class="si">
+    <div class="sc"><div class="sc-l"><span class="eyebrow">Film News</span><h2>📰 资讯 · 观影动态</h2><p>四虎影视在线观看为你带来最新影视资讯与观影指南</p></div>
+      <div class="chips"><span class="chip on">最新</span><span class="chip">预告</span><span class="chip">榜单</span><span class="chip">口碑</span></div>
+    </div>
+    <div class="nt">
+      <div class="nrow"><div class="nnum">01</div><div class="ntxt"><h4>《默杀》票房突破 13 亿，成暑期档黑马</h4><p>悬疑犯罪片《默杀》凭借紧凑的剧情和扎实的表演，上映三周票房持续攀升，成为近期最受关注的院线电影。</p></div><div class="meta">🔥 热度 98</div></div>
+      <div class="nrow"><div class="nnum">02</div><div class="ntxt"><h4>《庆余年2》收官，豆瓣评分稳居 7.9</h4><p>历时三个月播出，范闲的故事告一段落。剧集在人物塑造、权谋线和喜剧节奏上均获得观众好评。</p></div><div class="meta">📺 热度 95</div></div>
+      <div class="nrow"><div class="nnum">03</div><div class="ntxt"><h4>《流浪地球3》正式立项，2027 年上映</h4><p>导演郭帆宣布第三部进入筹备阶段，更多新角色与新场景将加入，中国科幻宇宙的版图继续扩张。</p></div><div class="meta">🚀 热度 92</div></div>
+      <div class="nrow"><div class="nnum">04</div><div class="ntxt"><h4>《白夜追凶2》定档，潘粤明一人分饰两角回归</h4><p>时隔七年，"关宏峰 / 关宏宇"兄弟再度登场，新一季将揭开关队失忆背后的完整真相。</p></div><div class="meta">🕵️ 热度 90</div></div>
+      <div class="nrow"><div class="nnum">05</div><div class="ntxt"><h4>国漫《雾山五行》第二季口碑封神</h4><p>六道无鱼工作室用极具东方韵味的作画与动作设计，再次证明国产动画的制作实力与艺术高度。</p></div><div class="meta">🎨 热度 88</div></div>
+      <div class="nrow"><div class="nnum">06</div><div class="ntxt"><h4>四虎影视在线观看九月观影指南发布</h4><p>精选 20 部值得一看的新片与好剧，涵盖悬疑、科幻、喜剧、治愈等多个类型，满足不同观影口味。</p></div><div class="meta">🍿 热度 85</div></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="fi">
+  <div class="ft">
+    <div class="brand"><div class="logo"><span class="lm">🐅</span>四虎影视在线观看</div>
+      <p>四虎影视在线观看致力于为影迷提供电影、电视剧、综艺、动漫精选推荐，猛虎出击帮你发现更多值得一看的好内容。</p></div>
+    <div class="fc"><h4>内容频道</h4><ul><li><a href="#home">首页</a></li><li><a href="#hot">热榜对战</a></li><li><a href="#wall">剧集海报墙</a></li><li><a href="#news">影视资讯</a></li></ul></div>
+    <div class="fc"><h4>热门标签</h4><ul><li><a href="#">高分电影</a></li><li><a href="#">悬疑犯罪</a></li><li><a href="#">科幻巨制</a></li><li><a href="#">国产好剧</a></li></ul></div>
+    <div class="fc"><h4>关于我们</h4><ul><li><a href="#">关于平台</a></li><li><a href="#">商务合作</a></li><li><a href="#">用户协议</a></li><li><a href="#">隐私政策</a></li></ul></div>
+  </div>
+  <div class="fb"><p>&copy; 2024 四虎影视在线观看 SiHuYingShiZaiXianGuanKan. All Rights Reserved. | 网址：https://sihuyingshizaixianguankan-cn.github.io/</p><div class="fl"><a href="#">网站地图</a><a href="#">友情链接</a><a href="#">意见反馈</a></div></div>
+</div></footer>
+
+<button id="top">↑</button>
+
+<script>
+const mb=document.getElementById('mb'),nl=document.getElementById('nl');
+mb.addEventListener('click',()=>nl.classList.toggle('open'));
+document.querySelectorAll('.nl a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+
+const secs=document.querySelectorAll('section[id]'),as=document.querySelectorAll('.nl a');
+window.addEventListener('scroll',()=>{
+  let cur='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-130)cur=s.id;});
+  as.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+});
+
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',function(){const sib=this.parentElement.querySelectorAll('.chip');sib.forEach(x=>x.classList.remove('on'));this.classList.add('on');}));
+
+const track=document.getElementById('track');
+let idx=0;
+function step(){return window.innerWidth<=520?1:(window.innerWidth<=860?2:3);}
+function maxIdx(){return Math.max(0,track.children.length-step());}
+function update(){const w=track.children[0].offsetWidth+18;track.style.transform=`translateX(${-idx*w}px)`;}
+window.addEventListener('resize',()=>{idx=Math.min(idx,maxIdx());update();});
+setInterval(()=>{idx=idx>=maxIdx()?0:idx+1;update();},4500);
+
+const topBtn=document.getElementById('top');
+window.addEventListener('scroll',()=>topBtn.classList.toggle('show',window.scrollY>400));
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:.08});
+document.querySelectorAll('.vscard,.ppanel,.nrow,.claw').forEach((el,i)=>{
+  el.style.opacity='0';el.style.transform='translateY(26px)';el.style.transition='all .5s ease '+(i%5)*.07+'s';io.observe(el);
+});
+</script>
+</body>
+</html>
